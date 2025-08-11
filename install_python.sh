@@ -36,7 +36,7 @@ yum -y install gcc zlib-devel bzip2-devel openssl-devel ncurses-devel \
 set -e
 
 # 清理可能存在的编译残留
-make distclean
+make distclean || :
 
 # 配置编译选项
 echo "配置编译参数..."
